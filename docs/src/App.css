@@ -1,0 +1,130 @@
+h1, h2, h3, h4 {
+    padding-top: 12px;
+}
+
+span.changed-indicator {
+    display: inline-block;
+    padding: 2px 4px;
+    margin: 0 4px;
+    color: var(--warning);
+    background: var(--warning-bg);
+    border-radius: 8px;
+    font-size: 12px;
+}
+
+span.changed-indicator button {
+    color: var(--warning);
+    border: 1px solid var(--warning);
+    border-radius: 8px;
+    background: transparent;
+    font-size: 1em;
+    padding: 2px 4px;
+    cursor: pointer;
+}
+
+.playground-container {
+    width: 100%;
+    padding-top: 12px;
+}
+.playground-container .bebok-bar {
+    top: -100px;
+}
+
+.playground {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--accent);
+    padding: 16px;
+    padding-top: 60px;
+    border-radius: 8px;
+}
+
+.store-vis {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    gap: 8px;
+    min-height: 256px;
+    @media (max-width: 1024px) {
+        grid-template-columns: none;
+    }
+}
+.store-vis .store-data {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.store-vis .store-data code {
+    height: 100%;
+}
+
+.store-vis h4 {
+    margin: 0;
+    padding: 0;
+}
+
+.store-vis .store-interactive {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.store-vis .color-btns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.store-vis button.color-btn {
+    width: 96px;
+    height: 32px;
+    background: white;
+    color: black;
+    cursor: pointer;
+    border-radius: 8px;
+    border: 0;
+}
+.store-vis button.color-btn:active {
+    transform: translate(1px, 1px);
+}
+
+.store-options {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    gap: 12px;
+    @media (max-width: 1024px) {
+        grid-template-columns: none;
+    }
+}
+
+.store-options h4 {
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    display: flex;
+    font-size: 12px;
+    padding: 12px 0;
+    gap: 12px;
+}
+
+footer a {
+    color: var(--accent)
+}
+
+.lic {
+    font-size: 12px;
+    line-height: 14px;
+    text-wrap: wrap;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,39 @@
+{
+	"name": "@bebokland/zustand-url-storage-docs",
+	"private": true,
+	"version": "1.0.0",
+	"description": "This repo contains source for the `@bebokland/zustand-url-storage` docs in a form of a simple example app.",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "tsc -b && vite build",
+		"check": "biome check --write",
+		"preview": "vite preview"
+	},
+	"keywords": [
+		"zustand",
+		"url storage",
+		"custom storage",
+		"persist middleware"
+	],
+	"author": "Artur Siaznik",
+	"license": "ISC",
+	"dependencies": {
+		"@bebokland/zustand-url-storage": "workspace:..",
+		"@types/lodash": "^4.17.24",
+		"lodash": "^4.18.1",
+		"react": "^19.2.5",
+		"react-dom": "^19.2.5",
+		"zustand": "^5.0.12"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "2.4.13",
+		"@types/node": "^24.12.2",
+		"@types/react": "^19.2.14",
+		"@types/react-dom": "^19.2.3",
+		"@vitejs/plugin-react": "^6.0.1",
+		"globals": "^17.5.0",
+		"typescript": "~6.0.2",
+		"vite": "^8.0.10"
+	}
+}

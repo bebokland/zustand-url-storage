@@ -1,0 +1,58 @@
+.bebok-bar {
+    position: relative;
+    width: 100%;
+}
+
+.bebok-bar .bar {
+    position: absolute;
+    width: 100%;
+    min-height: 1em;
+    background: var(--code-bg);
+    border: 1px solid var(--accent);
+    color: var(--text-h);
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 18px;
+    top: 100px;
+    z-index: 2;
+    text-wrap: nowrap;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+.bebok-bar .bar img {
+    margin-top: -3px;
+}
+.bebok-bar .bar span {
+    display: block;
+    transition: all;
+    transition-duration: 100ms;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.bebok-bar.highlight .bar span {
+    background: var(--accent);
+}
+
+.bebok-bar .head {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 1;
+    @media (max-width: 1024px) {
+		display: none;
+	}
+}
+.bebok-bar .hands {
+    position: absolute;
+    top: 92px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 3;
+    @media (max-width: 1024px) {
+		display: none;
+	}
+}
