@@ -16,9 +16,13 @@ jobs:
       - uses: pnpm/action-setup@v6
         with:
           cache: true
-      - name: Install packages
+      - name: LIB / Install packages
         run: pnpm install
-      - name: Test
-        run: pnpm test
-      - name: Build
+      - name: LIB / Build
+        run: pnpm build
+      - name: DOCS / Install packages
+        working-directory: docs
+        run: pnpm install
+      - name: DOCS / Build
+        working-directory: docs
         run: pnpm build
